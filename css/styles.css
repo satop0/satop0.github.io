@@ -1,5 +1,25 @@
+body {
+  background: #aaa;
+}
+
 h1 {
   font-size: 24px;
   padding-bottom: 8px;
   border-bottom: 1px solid #ddd;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  right: 150px;
+  left: 150px;
+  background: #eee;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.page {
 }
