@@ -2,34 +2,79 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta content="概要分を120文字程度(できれば80文字程度)" name="description">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="keywords" content="キーワード１,キーワード２…">
+    <meta property="og:title" content="ページの タイトル" />
+    <meta property="og:description" content="ページのディスクリプション" />
+    <meta property="og:type" content="ページの種類" />
+    <meta property="og:url" content="ページの URL" />
+    <meta property="og:image" content="サムネイル画像の URL" />
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:locale" content="ja_JP"  />
+
     <title>satoのポートフォリオサイト</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
-      <div class="page">
-        <h1>sato</h1>
-        <p>UI/UXデザイナー見習いです！ドットインストールで勉強中です！</p>
-        <h2>dotinstallで作成したリンク</h2>
-        <ul>
-          <li><a href="https://satop0.github.io/omikuji/">おみくじ</a></li>
-          <li><a href="https://satop0.github.io/bingo/">ビンゴシート</a></li>
-          <li><a href="https://satop0.github.io/calender/">カレンダー</a></li>
-          <li><a href="https://satop0.github.io/stopwatch/">ストップウォッチ</a></li>
-          <li><a href="https://satop0.github.io/typinggame/">タイピングゲーム</a></li>
-          <li><a href="https://satop0.github.io/quizapp/">三択クイズ</a></li>
-          <li><a href="https://satop0.github.io/slideshow/">スライドショー</a></li>
-          <li><a href="https://satop0.github.io/slotmachine/">スロット</a></li>
-          <li><a href="https://satop0.github.io/numbersgame/">ナンバーゲーム</a></li>
-          <li><a href="https://satop0.github.io/modalwindow/">モーダルウィンドウ</a></li>
-          <li><a href="https://satop0.github.io/tabmenu/">タブメニュー</a></li>
-          <li><a href="https://satop0.github.io/cssbubble/">チャット風デザイン</a></li>
-          <li><a href="https://satop0.github.io/heartanimation/">ハートアニメーション</a></li>
-          <li><a href="https://satop0.github.io/hamburgermenu/">ハンバーガーメニュー</a></li>
-          <li><a href="https://satop0.github.io/accordionjs">アコーディオンUI</a></li>
-          <li><a href="https://satop0.github.io/intersectionobserver">交差検知</a></li>
-        </ul>
+
+  <body class="scrollbar">
+    <header>
+      <div id="logo">
+        <h1>SATOPORT</h1>
       </div>
-    </div>
+      
+      <div class="pc">
+        <nav>
+          <ul id="AppMenu" class="container">
+            <li v-for="menu in menus" class="pc-menu">
+              <a class="menubtn" v-bind:href="menu[1]">{{ menu[0] }}</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="moba">
+        <div class="m-open">
+          <span class="material-icons" id="open">menu</span>
+        </div>
+        
+        <div class="overlay">
+          <span class="material-icons" id="close">close</span>
+          <nav>
+            <ul id="AppMenu2">
+              <li v-for="menu in menus">
+                <a class="menubtn" v-bind:href="menu[1]">{{ menu[0] }}</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+    </header>
+
+    <main>
+      <h1>satoのポートフォリオ一覧</h1>
+
+      <section>
+
+        <h2>dotinstallで制作したもの</h2>
+        <div id="AppLink">
+          <ul class="grid">
+            <li v-for="url in urls">
+              <a class="card" v-bind:href="url[1]">{{ url[0] }}</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+      
+    <footer>
+      <p>2021 / ©sato</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

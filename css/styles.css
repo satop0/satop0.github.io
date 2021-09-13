@@ -1,26 +1,325 @@
+/*-*-*-*-*-*------*-*-*-*-*-*/
+/*-*-*-*-*-| 要素 |-*-*-*-*-*/
+/*-*-*-*-*-*------*-*-*-*-*-*/
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 body {
-  background: #aaa;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #eee;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin: 0 50px 50px;
+}
+
+main > h1 {
+  visibility: hidden;
+  border-bottom: solid 2px #aaa;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+main > p {
+  visibility: hidden;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+section {
+  margin: 0 80px;
+}
+
+section > h2 {
+  visibility: hidden;
+  animation: fadeInDown 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  margin-left: 10px;
 }
 
 h1 {
+  font-size: 28px;
+}
+
+h2 {
   font-size: 24px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #333;
+  border-right: solid 1px #333;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  text-align: center;
+  line-height: 50px;
+}
+
+/*-*-*-*-*-*------------*-*-*-*-*-*/
+/*-*-*-*-*-| クラス＆ID |-*-*-*-*-*/
+/*-*-*-*-*-*------------*-*-*-*-*-*/
+.scrollbar {
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrollbar::-webkit-scrollbar{
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0)
+}
+
+#logo {
+  margin-right: auto;
+  margin-left: 20px;
+  line-height: 50px;
+  color: #eee;
+  user-select: none;
+}
+
+#AppMenu > li {
+  width: 100px;
+  height: 50px;
+  color: #eee;
+  line-height: 50px;
+  text-align: center;
+}
+
+#AppMenu > li:hover {
+  cursor: pointer;
+  background-color: #555;
+}
+
+.pc {
+  display: block;
+}
+
+.moba {
+  display: none;
 }
 
 .container {
   display: flex;
-  position: absolute;
-  top: 50px;
-  bottom: 50px;
-  right: 150px;
-  left: 150px;
-  background: #fff;
-  margin: auto;
-  padding: 20px;
-  border-radius: 8px;
 }
 
-.page {
-  background: pink;
+.pc-menu {
+  user-select: none;
+}
+
+.pc-menu + .pc-menu {
+  border-left: 1px solid #eee;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card {
+  visibility: hidden;
+  background-color: white;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  animation: fadeInDown 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  user-select: none;
+}
+
+a.card {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.card:hover {
+  width: 280px;
+  margin-left: 40px;
+  border: 2px solid #88f ;
+  padding: 8px;
+  transition: margin-left 0.3s, width 0.3s;
+}
+
+.menubtn {
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+a.menubtn {
+  display: block;
+  color: #eee;
+  text-decoration: none;
+}
+
+/*-*----------------------------*-*/
+/*-*-*-*-| アニメーション |-*-*-*-*/
+/*-*----------------------------*-*/
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: visible;
+  }
+}
+
+/*-*----------------------------*-*/
+/*-| メディアサイズデザイン変更 |-*/
+/*-*----------------------------*-*/
+@media (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+  section {
+    margin: 0;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  
+  
+  /* クラス */
+  .pc {
+    display: none;
+  }
+
+  .moba {
+    display: block;
+    z-index: 1;
+  }
+
+  .m-open{
+    display: block;
+    user-select: none;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-top: 12px;
+    color: #eee;
+  }
+
+  .m-open {
+    display: block;
+    color: #eee;
+  }
+
+  /* .overlay {
+    display: none;
+    color: #eee;
+  } */
+  
+  .m-open .hide {
+    display: none;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(85, 85, 85, 1);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+  }
+  
+  .overlay #close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .overlay ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .overlay li {
+    margin-top: 24px;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .overlay.show li {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .overlay.show li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  
+  .overlay.show li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
+  .overlay.show li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+
+  .overlay.show li:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+
+  .grid {
+    grid-template-columns: 100%;
+  }
+  
+  .card {
+    width: 220px;
+  }
+  
 }
