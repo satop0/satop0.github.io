@@ -6,7 +6,7 @@
     data: {
       menus: [
         ['TOP', 'https://satop0.github.io/'],
-        ['SITE', 'https://satop0.github.io/site/'],
+        ['SITE', 'site.html'],
         ['SAMPLE', '#'],
         ['SAMPLE', '#'],
       ]
@@ -18,7 +18,7 @@
     data: {
       menus: [
         ['TOP', 'https://satop0.github.io/'],
-        ['SITE', 'https://satop0.github.io/site/'],
+        ['SITE', 'site.html'],
         ['SAMPLE', '#'],
         ['SAMPLE', '#'],
       ]
