@@ -6,7 +6,7 @@
     data: {
       menus: [
         ['TOP', 'https://satop0.github.io/'],
-        ['SAMPLE', '#'],
+        ['SITE', 'https://satop0.github.io/site/'],
         ['SAMPLE', '#'],
         ['SAMPLE', '#'],
       ]
@@ -18,7 +18,7 @@
     data: {
       menus: [
         ['TOP', 'https://satop0.github.io/'],
-        ['SAMPLE', '#'],
+        ['SITE', 'https://satop0.github.io/site/'],
         ['SAMPLE', '#'],
         ['SAMPLE', '#'],
       ]
@@ -52,6 +52,18 @@
     method: {
     }
   });
+
+  var link_SITE = new Vue({
+    el: '#AppLinkSite',
+    data: {
+      urls: [
+        ['ホームページサンプル1', 'https://satop0.github.io/HPsample/'],
+      ]
+    },
+    method: {
+    }
+  });
+
   const open = document.getElementById('open');
   const overlay = document.querySelector('.overlay')
   const close = document.getElementById('close');
