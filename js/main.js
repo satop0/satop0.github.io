@@ -58,6 +58,7 @@
     data: {
       urls: [
         ['ホームページサンプル1', 'https://satop0.github.io/HPsample/'],
+        ['ホームページサンプル2', 'https://satop0.github.io/HPsample2/'],
       ]
     },
     method: {
