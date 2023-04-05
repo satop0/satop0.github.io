@@ -6,8 +6,8 @@
     data: {
       menus: [
         ['TOP', 'https://satop0.github.io/'],
-        ['SITE', 'site.html'],
-        ['SAMPLE', '#'],
+        ['SITE', 'https://satop0.github.io/site'],
+        ['SELF MADE', 'https://satop0.github.io/selfmade'],
         ['SAMPLE', '#'],
       ]
     },
@@ -18,8 +18,8 @@
     data: {
       menus: [
         ['TOP', 'https://satop0.github.io/'],
-        ['SITE', 'site.html'],
-        ['SAMPLE', '#'],
+        ['SITE', 'https://satop0.github.io/site'],
+        ['SELF MADE', 'https://satop0.github.io/selfmade'],
         ['SAMPLE', '#'],
       ]
     },
@@ -48,8 +48,6 @@
         ['Todoリスト(Vue)', 'https://satop0.github.io/vue1/'],
         ['Likeカウンター(Vue)', 'https://satop0.github.io/vue2/'],
       ]
-    },
-    method: {
     }
   });
 
@@ -60,11 +58,18 @@
         ['ホームページサンプル1', 'https://satop0.github.io/HPsample/'],
         ['ホームページサンプル2', 'https://satop0.github.io/HPsample2/'],
       ]
-    },
-    method: {
     }
   });
 
+  var link_SITE = new Vue({
+    el: '#AppLinkSelfmade',
+    data: {
+      urls: [
+        ['画像圧縮(vue.js)', 'https://satop0.github.io/imagecompress/'],
+      ]
+    }
+  });
+  
   const open = document.getElementById('open');
   const overlay = document.querySelector('.overlay')
   const close = document.getElementById('close');
