@@ -17,7 +17,7 @@
       todos: {
         handler: function() {
           localStorage.setItem('todos',JSON.stringify(this.todos));
-          alert('Data saved!');
+          // alert('Data saved!');
         },
         deep: true
       }

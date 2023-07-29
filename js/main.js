@@ -30,23 +30,23 @@
     data: {
       urls: [
         ['おみくじ', 'https://satop0.github.io/page/omikuji'],
-        ['ビンゴシート', 'https://satop0.github.io/bingo/'],
-        ['カレンダー', 'https://satop0.github.io/calender/'],
-        ['ストップウォッチ', 'https://satop0.github.io/stopwatch/'],
-        ['タイピングゲーム', 'https://satop0.github.io/typinggame/'],
-        ['三択クイズ', 'https://satop0.github.io/quizapp/'],
-        ['スライドショー', 'https://satop0.github.io/slideshow/'],
-        ['スロット', 'https://satop0.github.io/slotmachine/'],
-        ['ナンバーゲーム', 'https://satop0.github.io/numbersgame/'],
-        ['モーダルウィンドウ', 'https://satop0.github.io/modalwindow/'],
-        ['タブメニュー', 'https://satop0.github.io/tabmenu/'],
-        ['チャット風デザイン', 'https://satop0.github.io/cssbubble/'],
-        ['ハートアニメーション', 'https://satop0.github.io/heartanimation/'],
-        ['ハンバーガーメニュー', 'https://satop0.github.io/hamburgermenu/'],
-        ['アコーディオンUI', 'https://satop0.github.io/accordionjs'],
-        ['交差検知', 'https://satop0.github.io/intersectionobserver'],
-        ['Todoリスト(Vue)', 'https://satop0.github.io/vue1/'],
-        ['Likeカウンター(Vue)', 'https://satop0.github.io/vue2/'],
+        ['ビンゴシート', 'https://satop0.github.io/page/bingo/'],
+        ['カレンダー', 'https://satop0.github.io/page/calender/'],
+        ['ストップウォッチ', 'https://satop0.github.io/page/stopwatch/'],
+        ['タイピングゲーム', 'https://satop0.github.io/page/typinggame/'],
+        ['三択クイズ', 'https://satop0.github.io/page/quizapp/'],
+        ['スライドショー', 'https://satop0.github.io/page/slideshow/'],
+        ['スロット', 'https://satop0.github.io/page/slotmachine/'],
+        ['ナンバーゲーム', 'https://satop0.github.io/page/numbersgame/'],
+        ['モーダルウィンドウ', 'https://satop0.github.io/page/modalwindow/'],
+        ['タブメニュー', 'https://satop0.github.io/page/tabmenu/'],
+        ['チャット風デザイン', 'https://satop0.github.io/page/cssbubble/'],
+        ['ハートアニメーション', 'https://satop0.github.io/page/heartanimation/'],
+        ['ハンバーガーメニュー', 'https://satop0.github.io/page/hamburgermenu/'],
+        ['アコーディオンUI', 'https://satop0.github.io/page/accordionjs'],
+        ['交差検知', 'https://satop0.github.io/page/intersectionobserver'],
+        ['Todoリスト(Vue)', 'https://satop0.github.io/page/vue1/'],
+        ['Likeカウンター(Vue)', 'https://satop0.github.io/page/vue2/'],
       ]
     }
   });
@@ -55,8 +55,8 @@
     el: '#AppLinkSite',
     data: {
       urls: [
-        ['ホームページサンプル1', 'https://satop0.github.io/HPsample/'],
-        ['ホームページサンプル2', 'https://satop0.github.io/HPsample2/'],
+        ['ホームページサンプル1', 'https://satop0.github.io/page/HPsample/'],
+        ['ホームページサンプル2', 'https://satop0.github.io/page/HPsample2/'],
       ]
     }
   });
@@ -65,7 +65,7 @@
     el: '#AppLinkSelfmade',
     data: {
       urls: [
-        ['画像圧縮(vue.js)', 'https://satop0.github.io/imagecompress/'],
+        ['画像圧縮(vue.js)', 'https://satop0.github.io/page/imagecompress/'],
       ]
     }
   });
