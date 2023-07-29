@@ -29,7 +29,7 @@
     el: '#AppLink',
     data: {
       urls: [
-        ['おみくじ', 'https://satop0.github.io/omikuji/'],
+        ['おみくじ', 'https://satop0.github.io/page/omikuji'],
         ['ビンゴシート', 'https://satop0.github.io/bingo/'],
         ['カレンダー', 'https://satop0.github.io/calender/'],
         ['ストップウォッチ', 'https://satop0.github.io/stopwatch/'],
