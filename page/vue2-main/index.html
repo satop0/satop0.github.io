@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>My VueApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div id="app">
+      <p>Total Likes: {{ total }}</p>
+      <like-component message="Like" v-on:increment="incrementTotal"></like-component>
+      <like-component message="Awesome" v-on:increment="incrementTotal"></like-component>
+      <like-component message="Great" v-on:increment="incrementTotal"></like-component>
+      <like-component v-on:increment="incrementTotal"></like-component>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

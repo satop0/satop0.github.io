@@ -1,0 +1,26 @@
+body {
+  user-select: none;
+}
+img {
+  min-width: 200px;
+}
+
+#load {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  border-radius: 50%;
+  line-height: 100px;
+  text-align: center;
+  font-size: 24px;
+}
+.display-none{
+  display: none;
+}
+
+.arrow {
+  cursor: pointer;
+}

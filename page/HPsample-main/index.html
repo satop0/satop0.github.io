@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: https://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta content="sample" name="description">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="keywords">
+    <meta property="og:title" content="title" />
+    <meta property="og:description" content="dexcription"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="url" />
+    <meta property="og:image" content="image" />
+    <meta property="og:site_name" content="site_name" />
+    <meta property="og:locale" content="ja_JP"  />
+
+    <title>title</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  </head>
+
+  <body class="scrollbar">
+    <header class="n-scroll">
+      <div id="logo">
+        <h1>SAMPLE</h1>
+      </div>
+      <div id="overlay">
+        <div class="overlay-open" v-bind:class="{'overlay-close': isFire}">
+          <p v-on:click="fire" class="times"><i class="fas n-scroll" v-bind:class="{'fa-times': isFire, 'fa-bars': !isFire}"></i></p>
+          <nav>
+            <ul class="appMenu">
+              <li><a href="">ホーム</a></li>
+              <li><a href="">NoData</a></li>
+              <li><a href="">NoData</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav>
+        <ol class="breadcrumbs">
+          <li>ホーム</li>
+        </ol>
+      </nav>
+
+      <div class="grid">
+        <div class="icon mypro"></div>
+
+        <div class="card mypro">
+          <h2>サンプル<i class="fab fa-youtube n-scroll"></i></h2>
+          <img src="./image/top/under_line.png" alt="">
+          <p>
+            サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
+            サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
+            サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
+          </p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <h2>更新履歴</h2>
+        <img src="./image/top/under_line.png" alt="">
+        <div  class="history-scroll">
+          <ul>
+            <li class="history">
+              <p class="mark">yyyy/mm/dd</p>
+              <p>サンプルテキスト。サンプルテキスト。</p>
+            </li>
+            <li class="history">
+              <p class="mark">yyyy/mm/dd</p>
+              <p>サンプルテキスト。サンプルテキスト。</p>
+            </li>
+            <li class="history">
+              <p class="mark">yyyy/mm/dd</p>
+              <p>サンプルテキスト。サンプルテキスト。</p>
+            </li>
+            <li class="history">
+              <p class="mark">yyyy/mm/dd</p>
+              <p>サンプルテキスト。サンプルテキスト。</p>
+            </li>
+            <li class="history">
+              <p class="mark">yyyy/mm/dd</p>
+              <p>サンプルテキスト。サンプルテキスト。</p>
+            </li>
+            <li class="history">
+              <p class="mark">yyyy/mm/dd</p>
+              <p>サンプルテキスト。サンプルテキスト。</p>
+            </li>
+            <li class="history">
+            </li>
+          </ul>
+        </div>
+    </div>
+
+      <div class="card">
+        <h2>サンプル</h2>
+        <img src="./image/top/under_line.png" alt="">
+        <p>
+          サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
+          サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
+          サンプルテキスト。サンプルテキスト。<br>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>SNS</h2>
+        <img src="./image/top/under_line.png" alt=""><br>
+        <!--以下youtube-->
+        <a href="#" class="btn-social-flat n-scroll shadow">
+          <span class="btn-social-flat-icon btn-social-flat-icon--youtube n-scroll">
+            <i class="fab fa-youtube"></i>
+          </span>
+          <span class="btn-social-flat-text">youtube</span>
+        </a>
+
+        <!--以下twitter-->
+        <a href="#" class="btn-social-flat n-scroll shadow">
+          <span class="btn-social-flat-icon btn-social-flat-icon--twitter n-scroll">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span class="btn-social-flat-text">twitter</span>
+        </a>
+
+        <!--以下instagram-->
+        <a href="#" class="btn-social-flat n-scroll shadow">
+          <span class="btn-social-flat-icon btn-social-flat-icon--instagram n-scroll">
+            <i class="fab fa-instagram"></i>
+          </span>
+          <span class="btn-social-flat-text">instagram</span>
+        </a>
+
+      </div>
+
+      <div class="card">
+        <h2>広告</h2>
+        <img src="./image/top/under_line.png" alt=""><br>
+        <a href="#"><img class="img-size shadow" src="./image/top/banner.png" alt=""></a>
+      </div>
+    </main>
+      
+    <footer>
+      2021 / ©sato
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>画像圧縮テスト</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/browser-image-compression@2.0.2/dist/browser-image-compression.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <form id="app" name="file">
+        <input type="file" accept="image/*" ref="preview" v-on:input="ImageDsplay"><br>
+        <span>最大KB </span>
+        <input type="range" min="1" max="1000" v-model="slider_mb">
+        <span>{{ slider_mb }} KB</span><br>
+        <span>最大縦横幅 </span>
+        <input type="range" min="200" max="500" v-model="slider_wh">
+        <span>{{ slider_wh }} px</span><br>
+        <span>品質 </span>
+        <input type="range" min="1" max="100" v-model="slider_q">
+        <span>{{ slider_q }}%</span><br>
+        <span>表示幅 </span>
+        <input type="range" min="200" max="2000" v-model="slider_dwh">
+        <span>{{ slider_dwh }}px</span><br>
+        <div>オリジナル：{{ originalSize }} kb</div>
+        <div>圧縮後　　：{{ compressedSize }} kb</div>
+        <input type="button" v-on:click="ImageDsplay" value="再圧縮">
+        <div v-if="url">
+          <img v-bind:src="url" alt="画像" v-bind:style="{ width: displayWdith + 'px' }">
+        </div>
+        <div id="load" v-bind:class="{'display-none': displayNone}">{{ prog }}%</div>
+    </form>
+    
+      <script src="main.js"></script>
+  </body>
+</html>
