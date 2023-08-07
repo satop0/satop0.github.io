@@ -55,8 +55,8 @@
     el: '#AppLinkSite',
     data: {
       urls: [
-        ['ホームページサンプル1', 'https://satop0.github.io/page/HPsample/'],
-        ['ホームページサンプル2', 'https://satop0.github.io/page/HPsample2/'],
+        ['ホームページサンプル1', 'https://satop0.github.io/site/HPsample1/'],
+        ['ホームページサンプル2', 'https://satop0.github.io/site/HPsample2/'],
       ]
     }
   });
@@ -65,7 +65,7 @@
     el: '#AppLinkSelfmade',
     data: {
       urls: [
-        ['画像圧縮(vue.js)', 'https://satop0.github.io/page/imagecompress/'],
+        ['画像圧縮(vue.js)', 'https://satop0.github.io/selfmade/imagecompress/'],
       ]
     }
   });
